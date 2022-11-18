@@ -2,7 +2,7 @@ import streamlit as st
 import sqlite3
 import numpy as np
 
-conn = sqlite3.connect('F:\RSS Thane Sankalp 2022\RSS_Thane_Sankalp_2022.db')
+conn = sqlite3.connect('RSS_Thane_Sankalp_2022.db')
 c = conn.cursor()
 c.execute('SELECT Nagar_Code,Nagar_Name_Unicode FROM Nagar_Master order by Nagar_Code')
 Nagar=c.fetchall()
